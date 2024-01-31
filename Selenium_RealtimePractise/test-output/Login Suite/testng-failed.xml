@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login TestCase(failed)">
+    <classes>
+      <class name="Login_TestCases.CorrectPassword">
+        <methods>
+          <include name="loginwithCorrectPassword"/>
+        </methods>
+      </class> <!-- Login_TestCases.CorrectPassword -->
+      <class name="Login_TestCases.CorrectUsername">
+        <methods>
+          <include name="loginwithCorrectUsername"/>
+        </methods>
+      </class> <!-- Login_TestCases.CorrectUsername -->
+      <class name="Login_TestCases.BothIncorrect">
+        <methods>
+          <include name="loginwithIncorrectCredentials"/>
+        </methods>
+      </class> <!-- Login_TestCases.BothIncorrect -->
+      <class name="Login_TestCases.BothCorrect">
+        <methods>
+          <include name="loginwithCorrectCredentials"/>
+        </methods>
+      </class> <!-- Login_TestCases.BothCorrect -->
+    </classes>
+  </test> <!-- Login TestCase(failed) -->
+</suite> <!-- Failed suite [Login Suite] -->
